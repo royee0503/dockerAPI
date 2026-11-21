@@ -1,0 +1,14 @@
+ENV
+*.env/
+.env/
+
+EXE/
+.exe/
+
+__pycache__/
+*.pyc/
+
+.vscode/
+.venv/
+
+.log
