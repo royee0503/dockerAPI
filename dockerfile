@@ -11,7 +11,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir flask pymysql cryptography --break-system-packages
 
 # 5. 複製程式碼進容器
-COPY . .
+# COPY . .
 
 # 6. 宣告一個持久化用的資料夾（例如放程式log）
 VOLUME ["/app/logs"]
@@ -20,4 +20,4 @@ VOLUME ["/app/logs"]
 EXPOSE 3000
 
 # 8. 容器啟動時執行的指令
-CMD ["python", "app.py"]
+# CMD ["python", "app.py"]
